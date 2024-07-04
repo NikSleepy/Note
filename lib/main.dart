@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
-import 'package:notenih/HomePage.dart';
+import 'package:notenih/home_page.dart';
 // import 'package:notenih/login.dart';
 import 'package:provider/provider.dart';
 
@@ -15,7 +15,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
-  
   const MyApp({super.key});
 
   @override
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
         themeMode: Provider.of<ThemeNotifier>(context).currentTheme,
-        home: const HomePage());
+        home: const HomePage(),);
   }
 }
 
